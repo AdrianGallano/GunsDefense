@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cm6t5nttn5lwl"]
+[gd_scene load_steps=3 format=3 uid="uid://cm6t5nttn5lwl"]
 
 [ext_resource type="PackedScene" uid="uid://c6j05uoty23eh" path="res://scenes/player.tscn" id="2_yn1g0"]
+[ext_resource type="AudioStream" uid="uid://xjjpfn06jyro" path="res://assets/osts/Waterflame - Electroman Adventures.mp3" id="3_6nxin"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,3 +11,7 @@ position = Vector2(-73, 225)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_6nxin")
+autoplay = true
